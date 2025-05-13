@@ -1,0 +1,684 @@
+/* About.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.about-container {
+  padding: 80px 5%;
+  font-family: "Poppins", sans-serif;
+  background-color: #151926;
+  color: #d0d0d0;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+
+  z-index: 0;
+}
+.about-hea {
+  text-align: center;
+}
+.about-heading {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #ffffff;
+  position: relative;
+
+  display: inline-block;
+  z-index: 1;
+  animation: slideInFromLeft 0.8s ease forwards;
+}
+
+.about-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #bf7bff;
+}
+
+/* Tabs */
+.about-tabs {
+  display: flex;
+
+  margin-bottom: 30px;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.tab {
+  padding: 14px 32px;
+
+  background-color: rgba(26, 30, 46, 0.6);
+  color: #a0a0b0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.tab:hover {
+  background-color: #bf7bff;
+  color: white;
+}
+
+.tab.active {
+  background-color: #bf7bff;
+  color: white;
+}
+
+/* Tab Content */
+.tab-content {
+  position: relative;
+  z-index: 1;
+  min-height: 400px;
+}
+
+/* About Me Tab */
+.about-me-content {
+  display: flex;
+
+  gap: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.about-me-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-text {
+  flex: 2;
+}
+
+.bio-intro,
+.bio-main,
+.bio-approach,
+.bio-personal {
+  margin-bottom: 20px;
+  line-height: 1.8;
+
+  font-size: 20px;
+}
+
+.bio-intro {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.highlight-name {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+.highlight-hobby {
+  color: #00e5ff;
+  font-weight: 500;
+}
+
+.fun-facts {
+  flex: 1;
+
+  background-color: #1f2234;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid #00e5ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fun-facts h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+
+  font-size: 40px;
+}
+
+.fun-facts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fun-facts li {
+  padding: 10px 0;
+  display: flex;
+
+  font-size: 22px;
+  align-items: center;
+}
+
+.fact-icon {
+  margin-right: 15px;
+  font-size: 25px;
+  color: #00e5ff;
+}
+
+/* Skills Tab */
+.skills-content {
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition: all 0.8s ease;
+}
+
+.skills-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-category {
+  margin-bottom: 40px;
+}
+
+.skills-category h3 {
+  color: white;
+  margin-bottom: 25px;
+
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.skills-category h3::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(to right, #25f096, #9d72ff);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.skill-item {
+  padding: 20px;
+
+  background-color: none;
+
+  transition: all 0.3s linear;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s linear;
+
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.pixal {
+  display: flex;
+
+  gap: 10px;
+}
+.skill-icon {
+  font-size: 40px;
+  color: white;
+  font-weight: 500;
+}
+
+.skill-name {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.skill-level {
+  color: #00e5ff;
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(to right, #25f096, #9d72ff);
+  border-radius: 4px;
+  transition: width 1.5s ease;
+}
+
+/* Education Tab */
+.education-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.education-content.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-card {
+  display: flex;
+
+  background-color: #1f2234;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ff5722;
+}
+
+.education-icon {
+  margin-right: 35px;
+
+  color: #00e5ff;
+  font-size: 30px;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-details h3 {
+  color: #ffffff;
+  font-size: 35px;
+
+  margin-bottom: 15px;
+}
+
+.university-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.university {
+  color: #ff5722;
+
+  font-weight: 600;
+  font-size: 23px;
+}
+.university-info span {
+  font-size: 23px;
+}
+
+.period {
+  color: #00e5ff;
+  font-weight: 500;
+}
+
+.location {
+  color: #a0a0b0;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.description {
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.courses h4,
+.projects-about h4 {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.course-tag {
+  background-color: rgba(255, 87, 34, 0.2);
+  color: #ff5722;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.course-tag:hover {
+  background-color: #ff5722;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-card-about {
+  background-color: rgba(26, 30, 46, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #00e5ff;
+}
+
+.project-card-about h5 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project-card-about p {
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.project-period-about {
+  color: #00e5ff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Animation keyframes */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .fun-facts {
+    margin-top: 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Start from 1202px */
+@media (width <= 1202px) {
+  .about-heading {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .about-tabs {
+    font-size: 20px;
+  }
+
+  .tab {
+    padding: 12px 30px;
+    margin-right: 15px;
+  }
+  .about-me-content {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (width <= 1024px) {
+  .about-heading {
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+  .about-tabs {
+    font-size: 20px;
+  }
+
+  .tab {
+    padding: 10px 26px;
+    margin-right: 15px;
+  }
+  .about-me-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (width <= 986px) {
+  .education-card {
+    padding: 30px;
+  }
+
+  .education-icon {
+    margin-right: 25px;
+    font-size: 30px;
+  }
+  .education-details h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .university-info span {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .courses h4,
+  .projects-about h4 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .course-tag {
+    padding: 6px 12px;
+
+    font-size: 18px;
+  }
+
+  .project-card-about {
+    padding: 20px;
+  }
+
+  .project-card-about h5 {
+    font-size: 22px;
+  }
+
+  .project-card-about p {
+    font-size: 18px;
+  }
+
+  .project-period-about {
+    font-size: 18px;
+  }
+}
+@media (width <= 850px) {
+  .education-card {
+    padding: 25px;
+  }
+
+  .education-details h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+@media (width <= 768px) {
+  .skills-category h3 {
+    font-size: 30px;
+  }
+
+  .skill-item {
+    width: auto;
+  }
+}
+@media (width <= 652px) {
+  .university-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width <= 550px) {
+  .about-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .about-tabs {
+    font-size: 20px;
+  }
+
+  .tab {
+    padding: 8px 24px;
+  }
+  .about-me-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .bio-intro,
+  .bio-main,
+  .bio-approach,
+  .bio-personal {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .bio-intro {
+    font-size: 20px;
+  }
+
+  .fun-facts {
+    padding: 25px;
+  }
+
+  .fun-facts h3 {
+    margin-bottom: 15px;
+
+    font-size: 35px;
+  }
+
+  .fun-facts li {
+    padding: 10px 0;
+
+    font-size: 20px;
+  }
+
+  .fact-icon {
+    margin-right: 15px;
+    font-size: 22px;
+  }
+}
+
+@media (width <= 484px) {
+  .about-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .about-tabs {
+    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab {
+    padding: 6px 20px;
+    margin-top: 10px;
+  }
+  .about-me-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .bio-intro,
+  .bio-main,
+  .bio-approach,
+  .bio-personal {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .bio-intro {
+    font-size: 20px;
+  }
+
+  .fun-facts {
+    padding: 25px;
+  }
+
+  .fun-facts h3 {
+    margin-bottom: 15px;
+
+    font-size: 30px;
+  }
+
+  .fun-facts li {
+    padding: 10px 0;
+
+    font-size: 18px;
+  }
+
+  .fact-icon {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  .course-tag {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .education-card {
+    padding: 20px;
+  }
+  .education-icon {
+    margin-right: 10px;
+  }
+  .education-details h3 {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+@media (width <= 356px) {
+  .fun-facts {
+    display: none;
+  }
+
+  .education-details h3 {
+    margin-bottom: 15px;
+  }
+}
