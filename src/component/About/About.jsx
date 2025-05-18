@@ -6,7 +6,6 @@ import {
   faLaptopCode, 
   faGraduationCap, 
   faMusic, 
-  faCode, 
   faGamepad, 
   faBook
 
