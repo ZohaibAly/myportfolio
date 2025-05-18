@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
-  faCodeBranch, 
   faLaptopCode, 
   faGraduationCap, 
   faMusic, 
@@ -368,10 +367,6 @@ const About = () => {
             <li>
               <FontAwesomeIcon icon={faLaptopCode} className="fact-icon" />
               1+ years of professional development experience
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faCodeBranch} className="fact-icon" />
-              Contributed to 10 open-source projects
             </li>
             <li>
               <FontAwesomeIcon icon={faMusic} className="fact-icon" />

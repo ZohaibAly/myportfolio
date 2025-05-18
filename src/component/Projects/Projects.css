@@ -334,12 +334,12 @@
 
 .filter-btn:hover {
   background-color: rgba(255, 87, 34, 0.2);
-  color: #ff5722;
+  color: #bf7bff;
   transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background-color: #ff5722;
+  background-color: #bf7bff;
   color: white;
 }
 
