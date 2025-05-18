@@ -378,7 +378,6 @@ const About = () => {
               <FontAwesomeIcon icon={faMusic} className="fact-icon" />
               Love listening to music while coding
             </li>
-            
             <li>
               <FontAwesomeIcon icon={faGamepad} className="fact-icon" />
               Enjoy gaming in my free time
