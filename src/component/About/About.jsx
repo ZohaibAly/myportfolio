@@ -372,16 +372,13 @@ const About = () => {
             </li>
             <li>
               <FontAwesomeIcon icon={faCodeBranch} className="fact-icon" />
-              Contributed to 10+ open-source projects
+              Contributed to 10 open-source projects
             </li>
             <li>
               <FontAwesomeIcon icon={faMusic} className="fact-icon" />
               Love listening to music while coding
             </li>
-            <li>
-              <FontAwesomeIcon icon={faCode} className="fact-icon" />
-              Passionate about clean code architecture
-            </li>
+            
             <li>
               <FontAwesomeIcon icon={faGamepad} className="fact-icon" />
               Enjoy gaming in my free time
