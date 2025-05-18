@@ -6,7 +6,8 @@ import {
   faGraduationCap, 
   faMusic, 
   faGamepad, 
-  faBook
+  faBook,
+  faBrain
 
 } from "@fortawesome/free-solid-svg-icons";
 import "./About.css"; // Your existing CSS
@@ -367,6 +368,10 @@ const About = () => {
             <li>
               <FontAwesomeIcon icon={faLaptopCode} className="fact-icon" />
               1+ years of professional development experience
+            </li>
+            <li>
+              <FontAwesomeIcon icon={ faBrain} className="fact-icon" />
+              I enjoy turning complex challenges into clean, efficient code
             </li>
             <li>
               <FontAwesomeIcon icon={faMusic} className="fact-icon" />
