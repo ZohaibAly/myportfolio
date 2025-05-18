@@ -368,7 +368,7 @@ const About = () => {
           <ul>
             <li>
               <FontAwesomeIcon icon={faLaptopCode} className="fact-icon" />
-              3+ years of professional development experience
+              1+ years of professional development experience
             </li>
             <li>
               <FontAwesomeIcon icon={faCodeBranch} className="fact-icon" />
